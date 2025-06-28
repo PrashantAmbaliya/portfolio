@@ -37,10 +37,11 @@ export default function Hero() {
           crossOrigin="anonymous"
           muted
           loop
-          className="rotate-180 absolute top-[-350px] h-full w-full left-0 object-cover z-[-2]"
+          className="rotate-180 absolute top-[-348px] h-full w-full left-0 object-cover z-[-2]"
         >
           <source src="/blackhole.webm" type="video/webm" />
         </video>
+
         <div className="container flex flex-col items-start justify-center tracking-wide text-black dark:text-white">
           <div className="container relative flex h-full w-full flex-col items-center">
             <div className="h-72 w-[280px] text-center text-[2rem] font-extrabold sm:w-[520px] md:w-[700px] lg:mb-5 lg:w-[920px] lg:text-[3rem]">
