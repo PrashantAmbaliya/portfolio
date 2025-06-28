@@ -47,15 +47,15 @@ description: `Full-Stack Developer. Built a 3D product configurator, a Mapbox-ba
 ] as const;
 
 
-// export const projectsData = [
-//   {
-//     title: 'Audit Master',
-//     description: `Audit Master is a platform that streamlines the process of obtaining legal expertise and resources. It automates tasks like GAP Analysis, GAP Reporting, Due Diligence & more.`,
-//     tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'SCRUM Methodology'],
-//     imageUrl: auditMasterImg,
-//     link: 'https://auditmaster.ai/',
-//   }
-// ] as const;
+export const projectsData = [
+  {
+    title: 'Audit Master',
+    description: `Audit Master is a platform that streamlines the process of obtaining legal expertise and resources. It automates tasks like GAP Analysis, GAP Reporting, Due Diligence & more.`,
+    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'SCRUM Methodology'],
+    imageUrl: "/svgs/nextjs.svg",
+    link: 'https://auditmaster.ai/',
+  }
+] as const;
 
 export const skillsData = [
   ['JavaScript', '/svgs/javascript-js.svg'],
