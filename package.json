@@ -30,10 +30,10 @@
     "react-vertical-timeline-component": "^3.6.0",
     "resend": "^3.2.0",
     "tailwind-merge": "^2.5.2",
-    "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-            "@react-three/drei": "^9.88.4",
+    "@react-three/drei": "^9.88.4",
     "@react-three/fiber": "^8.15.4",
     "three": "^0.157.0",
     "@types/locomotive-scroll": "^4.1.3",
