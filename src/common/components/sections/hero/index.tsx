@@ -37,7 +37,7 @@ export default function Hero() {
           crossOrigin="anonymous"
           muted
           loop
-          className="fixed top-[-45%] md:top-[-50%] left-0 w-full h-full object-cover z-[-2] rotate-180"
+          className=" absolute top-[-45%] md:top-[-50%] left-0 w-full h-full object-cover z-[-2] rotate-180"
         >
           <source src="/blackhole.webm" type="video/webm" />
         </video>
