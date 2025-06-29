@@ -32,7 +32,6 @@ export default function Hero() {
         <video
           width="480"
           height="720"
-          preload="none"
           autoPlay
           crossOrigin="anonymous"
           muted
