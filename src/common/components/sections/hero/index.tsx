@@ -107,9 +107,15 @@ export default function Hero() {
           </div>
         </div>
       </section>
-      <div className="flex w-full justify-center dark:bg-darkBg">
-        <SectionDivider />
-      </div>
+      <motion.div
+  className="flex w-full justify-center bg-gradient-to-b from-transparent to-darkBg dark:to-darkBg"
+  // className="flex w-full justify-center bg-gradient-to-b dark:bg-darkBg"
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+>
+  <SectionDivider />
+</motion.div>
     </>
   );
 }

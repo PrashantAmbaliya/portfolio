@@ -99,8 +99,8 @@ const SkillCategory = ({ title, skills }: { title: string; skills: typeof allSki
         {skills.map((skill, index) => (
           <motion.div
             key={skill.skill_name}
-            // className="Welcome-box py-[8px] px-[10px] border border-[#7042f88b] opacity-[0.9]"
-            className="borderBlack flex items-center justify-center rounded-xl bg-gray-200 px-5 py-3 dark:bg-white/10 dark:text-white/80 whitespace-nowrap"
+            // className="Welcome-box py-[8px] px-[10px] border border-[#7042f88b] opacity-[0.9] cursor-pointer "
+            className="borderBlack flex items-center justify-center rounded-xl bg-gray-200 px-5 py-3 cursor-pointer dark:bg-white/10 dark:text-white/80  whitespace-nowrap"
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -114,7 +114,7 @@ const SkillCategory = ({ title, skills }: { title: string; skills: typeof allSki
               height={20}
               className="mr-1.5 sm:mr-2 inline h-5 w-5 sm:h-6 sm:w-6"
             />
-            <span className="text-sm sm:text-lg  dark:text-white/80">
+            <span className="text-sm sm:text-lg dark:text-white/80">
               {skill.skill_name}
             </span>
           </motion.div>
@@ -181,7 +181,10 @@ export default function Skills() {
         </div>
       </div>
 
-      <div className="flex w-full justify-center dark:bg-darkBg">
+      <div 
+      
+      className="flex w-full justify-center dark:bg-darkBg"
+      >
         <SectionDivider />
       </div>
     </section>

@@ -42,15 +42,14 @@ export default function Experience() {
                     theme === 'light'
                       ? '0.4rem solid #9ca3af'
                       : '0.4rem solid rgba(255, 255, 255, 0.5)',
-                  display: theme === 'dark' ? 'none' : 'block',
+                  display: theme === 'dark' ? 'block' : 'block',
                 }}
                 date={item.date}
                 icon={item.icon}
                 iconStyle={{
-                  background:
-                    theme === 'light' ? '#fff' : 'rgba(255, 255, 255, 0.15)',
+                  background: "black",
                   fontSize: '1.5rem',
-                  display: theme === 'dark' ? 'none' : 'flex',
+                  display: theme === 'dark' ? 'block' : 'flex',
                   zIndex: '20'
                 }}
               >
@@ -63,7 +62,7 @@ export default function Experience() {
             </React.Fragment>
           ))}
       </VerticalTimeline>
-      <div className="flex w-full justify-center dark:bg-darkBg">
+      <div className="flex w-full justify-center bg-gradient-to-b from-transparent to-darkBg dark:to-darkBg">
         <SectionDivider />
       </div>
     </section>

@@ -11,9 +11,9 @@ import { ModeToggle } from '@/common/theme/mode-toggler';
 import StarsCanvas from '@/common/components/sections/hero/_components/StarBackground';
 
 export const metadata: Metadata = {
-  title: 'Prashant Ambaliya | Portfolio',
+  title: 'Prashant Ambaliya',
   description:
-    'Check out modern and stylish porfolio of an experienced Web Developer Prashant Ambaliya! Built using TypeScript, Next.js 14, Framaer Motion and Tailwind CSS.',
+    'Check out my portfolio as an experienced web developer, Prashant Ambaliya! Built using TypeScript, Next.js 14, Framer Motion, and Tailwind CSS.',
 };
 
 const fontMontserrat = FontMontserrat({
@@ -37,8 +37,7 @@ export default function RootLayout({
           <ActiveSectionContextProvider>
             <ThemeProvider
               attribute="class"
-              defaultTheme="system"
-              enableSystem
+              defaultTheme="dark"
               disableTransitionOnChange
             >
               <StarsCanvas />

@@ -15,9 +15,9 @@ export function ModeToggle() {
   //   setTheme(theme === "light" ? "dark" : "light");
   // };
 
-  React.useEffect(() => {
-    setTheme("dark")
-  }, [hasMounted]);
+  // React.useEffect(() => {
+  //   setTheme("dark")
+  // }, [hasMounted]);
 
   if (!hasMounted) return null;
 
