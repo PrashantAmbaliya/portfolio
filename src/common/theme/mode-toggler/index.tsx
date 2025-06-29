@@ -11,9 +11,13 @@ export function ModeToggle() {
   const { setTheme, theme } = useTheme();
   const hasMounted = useHasMounted();
 
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
+  // const toggleTheme = () => {
+  //   setTheme(theme === "light" ? "dark" : "light");
+  // };
+
+  React.useEffect(() => {
+    setTheme("dark")
+  }, [hasMounted]);
 
   if (!hasMounted) return null;
 
@@ -21,7 +25,7 @@ export function ModeToggle() {
     <Button
       className="bg-transparent p-0 text-gray-700 opacity-80 dark:text-white"
       size={"sm"}
-      onClick={toggleTheme}
+      // onClick={toggleTheme}
     >
       {theme === "light" ? (
         <Sun className="h-4 w-4" />
