@@ -10,6 +10,7 @@ import Skills from "@/common/components/sections/skills";
 export default function Home() {
   return (
     <main className="flex min-h-screen w-full flex-col items-center p-0">
+      
       <Hero />
       <About />
       {/* <Projects /> */}

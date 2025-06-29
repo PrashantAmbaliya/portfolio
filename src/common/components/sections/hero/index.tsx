@@ -37,10 +37,12 @@ export default function Hero() {
           crossOrigin="anonymous"
           muted
           loop
-          className="rotate-180 absolute top-[-348px] h-full w-full left-0 object-cover z-[-2]"
+          className="fixed top-[-50%] left-0 w-full h-full object-cover z-[-2] rotate-180"
         >
           <source src="/blackhole.webm" type="video/webm" />
         </video>
+
+
 
         <div className="container flex flex-col items-start justify-center tracking-wide text-black dark:text-white">
           <div className="container relative flex h-full w-full flex-col items-center">
@@ -108,14 +110,14 @@ export default function Hero() {
         </div>
       </section>
       <motion.div
-  className="flex w-full justify-center bg-gradient-to-b from-transparent to-darkBg dark:to-darkBg"
-  // className="flex w-full justify-center bg-gradient-to-b dark:bg-darkBg"
-  initial={{ opacity: 0, y: -20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1 }}
->
-  <SectionDivider />
-</motion.div>
+        className="flex w-full justify-center bg-gradient-to-b from-transparent to-darkBg dark:to-darkBg"
+        // className="flex w-full justify-center bg-gradient-to-b dark:bg-darkBg"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <SectionDivider />
+      </motion.div>
     </>
   );
 }
