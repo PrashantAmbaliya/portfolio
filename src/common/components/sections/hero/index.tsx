@@ -1,5 +1,5 @@
 "use client";
-
+import { useEffect } from 'react'
 import "next-cloudinary/dist/cld-video-player.css";
 import SectionDivider from "@/common/components/shared/section-divider";
 import TextAnimation from "./_components/text-animation";
@@ -14,6 +14,15 @@ import StarsCanvas from "./_components/StarBackground";
 export default function Hero() {
   const { ref } = useSectionInView("home");
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
+useEffect(() => {
+  const video = document.querySelector('video');
+  if (video) {
+    video.play().catch(error => {
+      console.log('Autoplay failed:', error);
+    });
+  }
+}, []);
 
   return (
     <>
@@ -30,16 +39,17 @@ export default function Hero() {
         {/* <StarsCanvas /> */}
 
         <video
-          width="480"
-          height="720"
-          autoPlay
-          crossOrigin="anonymous"
-          muted
-          loop
-          className=" absolute top-[-45%] md:top-[-50%] left-0 w-full h-full object-cover z-[-2] rotate-180"
-        >
-          <source src="/blackhole.webm" type="video/webm" />
-        </video>
+  width="480"
+  height="720"
+  autoPlay
+  muted
+  loop
+  playsInline  
+  crossOrigin="anonymous"
+  className="absolute top-[-45%] md:top-[-50%] left-0 w-full h-full object-cover z-[-2] rotate-180"
+>
+  <source src="/blackhole.webm" type="video/webm" />
+</video>
 
         <div className="container flex flex-col items-start justify-center tracking-wide text-black dark:text-white">
           <div className="container relative flex h-full w-full flex-col items-center">
