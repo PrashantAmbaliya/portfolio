@@ -96,7 +96,7 @@ export const metadata: Metadata = {
   
   // Add structured data
   other: {
-    'google-site-verification': 'google-verification-code', 
+    'google-site-verification': 'BqbPC8xZh4cZ31EY0UFGMiJdwXM2KtUuHBbOERVMaO0', 
   },
   
   alternates: {
@@ -116,51 +116,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <head>
-        {/* Additional meta tags for better SEO */}
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#070514" />
-        <link rel="canonical" href="https://www.prashantambaliya.com" />
-        
-        {/* Structured Data for Person */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "name": "Prashant Ambaliya",
-              "jobTitle": "Full Stack Developer",
-              "url": "https://www.prashantambaliya.com",
-              "sameAs": [
-                "https://github.com/prashantambaliya", 
-                "https://www.linkedin.com/in/prashant-a-889590228/",
-                "https://x.com/Prashant__101"
-              ],
-              "knowsAbout": [
-                "React",
-                "Next.js",
-                "Node.js",
-                "MongoDB",
-                "PostgreSQL",
-                "AWS",
-                "TypeScript",
-                "JavaScript",
-                "Web Development"
-              ],
-              "worksFor": {
-                "@type": "Organization",
-                "name": "Freelance"
-              }
-            })
-          }}
-        />
-      </head>
       <body
         className={cn(
           'relative flex items-center justify-center bg-[#070514] overflow-y-scroll overflow-x-hidden',
           fontMontserrat.className,
-         )}
+        )}
       >
         <div className="flex min-h-screen w-full flex-col">
           <ActiveSectionContextProvider>
