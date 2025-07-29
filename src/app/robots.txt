@@ -4,10 +4,8 @@ Allow: /
 # Sitemap location
 Sitemap: https://www.prashantambaliya.com/sitemap.xml
 
-# Block access to admin areas (if any)
-Disallow: /admin/
-Disallow: /_next/static/
-Disallow: /api/
+# ✅ Allow Next.js static assets (for proper indexing)
+Allow: /_next/static/
 
 # Allow important assets
 Allow: /favicon.ico
