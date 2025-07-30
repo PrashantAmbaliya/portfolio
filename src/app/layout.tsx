@@ -11,7 +11,7 @@ import { ModeToggle } from '@/common/theme/mode-toggler';
 import StarsCanvas from '@/common/components/sections/hero/_components/StarBackground';
 
 export const metadata: Metadata = {
-  title: 'Prashant Ambaliya - Full Stack Developer | React, Next.js, Node.js',
+  title: 'Prashant Ambaliya',
   description:
     'Experienced Full Stack Developer specializing in React, Next.js, Node.js, MongoDB, PostgreSQL, and AWS. Building responsive, scalable web applications with modern technologies.',
   
