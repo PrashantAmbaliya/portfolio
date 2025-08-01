@@ -9,8 +9,10 @@ import Header from '@/common/components/shared/header';
 import Footer from '@/common/components/shared/footer';
 import { ModeToggle } from '@/common/theme/mode-toggler';
 import StarsCanvas from '@/common/components/sections/hero/_components/StarBackground';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
+  // Improved title - more descriptive and within recommended length
   title: 'Prashant Ambaliya',
   description:
     'Experienced Full Stack Developer specializing in React, Next.js, Node.js, MongoDB, PostgreSQL, and AWS. Building responsive, scalable web applications with modern technologies.',
@@ -41,7 +43,7 @@ export const metadata: Metadata = {
     siteName: 'Prashant Ambaliya Portfolio',
     images: [
       {
-        url: '/Prashant-Ambaliya-Portfolio.png',
+        url: 'https://www.prashantambaliya.com/Prashant-Ambaliya-Portfolio.png',
         width: 1200,
         height: 630,
         alt: 'Prashant Ambaliya - Full Stack Developer Portfolio',
@@ -55,7 +57,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Prashant Ambaliya - Full Stack Developer',
     description: 'Experienced Full Stack Developer specializing in React, Next.js, Node.js, MongoDB, PostgreSQL, and AWS.',
-    images: ['/Prashant-Ambaliya-Portfolio.png'],
+    images: ['https://www.prashantambaliya.com/Prashant-Ambaliya-Portfolio.png'],
   },
   
   robots: {
@@ -94,7 +96,7 @@ export const metadata: Metadata = {
     'Scalable Applications'
   ],
   
-  // Add structured data
+  // Add Google Site Verification
   other: {
     'google-site-verification': 'BqbPC8xZh4cZ31EY0UFGMiJdwXM2KtUuHBbOERVMaO0', 
   },
@@ -109,6 +111,43 @@ const fontMontserrat = FontMontserrat({
   display: 'swap',
 });
 
+// Structured Data JSON-LD
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Prashant Ambaliya",
+  "jobTitle": "Full Stack Developer",
+  "description": "Experienced Full Stack Developer specializing in React, Next.js, Node.js, MongoDB, PostgreSQL, and AWS",
+  "url": "https://www.prashantambaliya.com",
+  "image": "https://www.prashantambaliya.com/Prashant-Ambaliya-Portfolio.png",
+  "sameAs": [
+    "https://github.com/prashantambaliya",
+    "https://linkedin.com/in/prashantambaliya"
+  ],
+  "knowsAbout": [
+    "React",
+    "Next.js",
+    "Node.js",
+    "JavaScript",
+    "TypeScript",
+    "MongoDB",
+    "PostgreSQL",
+    "AWS",
+    "Full Stack Development",
+    "Web Development"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Freelance Developer"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Rajkot",
+    "addressRegion": "Gujarat",
+    "addressCountry": "IN"
+  }
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -116,6 +155,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <head>
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
+        />
+        
+        {/* Preconnect to external domains for better performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
+        {/* DNS prefetch for external resources */}
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+      </head>
       <body
         className={cn(
           'relative flex items-center justify-center bg-[#070514] overflow-y-scroll overflow-x-hidden',
@@ -131,12 +186,28 @@ export default function RootLayout({
             >
               <StarsCanvas />
               <Header />
-              {children}
+              <main role="main">
+                {children}
+              </main>
               <Footer />
               <Toaster position="top-right" />
             </ThemeProvider>
           </ActiveSectionContextProvider>
         </div>
+
+        {/* Google Analytics - Replace with your actual GA4 tracking ID */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'GA_MEASUREMENT_ID');
+          `}
+        </Script>
       </body>
     </html>
   );
