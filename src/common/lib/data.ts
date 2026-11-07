@@ -31,11 +31,18 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: 'EVERSANA',
+    location: 'Senior Software Engineer · Remote',
+    description: `Own an internal multi-tenant application platform end to end plus ~20 data and AI apps: FastAPI services, React front ends, PostgreSQL and S3, RBAC and tenancy, Cognito SSO. Infrastructure on AWS (EKS, CloudFront + Lambda@Edge, RDS, SES) with Terraform and GCP Vertex AI. Snowflake pipelines, Tableau automation, and an LLM gateway (Claude + Gemini) powering LangGraph, RAG and PDF-extraction features across ~15 apps.`,
+    icon: React.createElement(BriefcaseBusinessIcon),
+    date: '2025 – Present',
+  },
+  {
     title: 'Wings Tech Solutions',
     location: 'Rajkot',
-description: `Full-Stack Developer. Built a 3D product configurator, a Mapbox-based trip planner, and an AI image recognition app. Improved performance, reduced API costs, and streamlined CI/CD with Jenkins.`,
+    description: `Full-Stack Developer. Built a 3D CAD product configurator for Spokbee (50% faster loads, freight APIs, Jenkins CI/CD), a Mapbox-based trip planner, and an AI image recognition app. Improved performance and cut third-party API costs.`,
     icon: React.createElement(BriefcaseBusinessIcon),
-    date: 'Feb 2024 – Present',
+    date: 'Feb 2024 – 2025',
   },
   {
     title: 'Purezza Technologies',

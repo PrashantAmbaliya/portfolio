@@ -53,6 +53,7 @@ useEffect(() => {
 
         <div className="container flex flex-col items-start justify-center tracking-wide text-black dark:text-white">
           <div className="container relative flex h-full w-full flex-col items-center">
+            <h1 className="sr-only">Prashant Ambaliya, Senior Software Engineer: full-stack web and mobile apps, cloud infrastructure and AI integration</h1>
             <div className="h-72 w-[280px] text-center text-[2rem] font-extrabold sm:w-[520px] md:w-[700px] lg:mb-5 lg:w-[920px] lg:text-[3rem]">
               <motion.span
                 initial={{ y: -100, x: "-50%", opacity: 0 }}

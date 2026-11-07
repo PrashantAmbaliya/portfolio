@@ -88,7 +88,6 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  swcMinify: true,
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {
       config.optimization.splitChunks.cacheGroups = {

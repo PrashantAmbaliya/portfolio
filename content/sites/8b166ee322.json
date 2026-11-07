@@ -1,0 +1,128 @@
+{
+ "id": "8b166ee322",
+ "placeId": "ChIJD95GX_Jj4YkRD9cObGQnT5s",
+ "name": "Hometown Diner",
+ "type": "Diner",
+ "category": "diner",
+ "group": "food",
+ "town": "Rindge",
+ "tagline": "Fresh, local and worth the trip",
+ "headline": "Good food, made with heart, in Rindge",
+ "intro": "Hometown Diner is where Rindge comes to eat. Generous portions, familiar faces, and food made the way it should be.",
+ "about": [
+  "Hometown Diner is a locally owned diner in Rindge, New Hampshire. We cook the kind of food people come back for: honest, generous and made from scratch.",
+  "Whether it is breakfast with the family, lunch on a work day, or dinner with friends, you will find a warm welcome and a full plate. Thank you to the 1,084 guests who have shared a review. It means the world to a small business."
+ ],
+ "services": [
+  {
+   "title": "Dine in",
+   "desc": "Pull up a chair. Great food and friendly service, every day."
+  },
+  {
+   "title": "Take out",
+   "desc": "Call ahead and it will be hot and ready when you arrive."
+  },
+  {
+   "title": "Daily specials",
+   "desc": "Ask what is fresh today. The specials board changes with the season."
+  },
+  {
+   "title": "Catering & events",
+   "desc": "Feeding a crowd? We handle parties, meetings and family gatherings."
+  },
+  {
+   "title": "Family friendly",
+   "desc": "Kids welcome, high chairs ready, and a menu with something for everyone."
+  },
+  {
+   "title": "Local ingredients",
+   "desc": "We buy from nearby farms and bakers whenever we can."
+  }
+ ],
+ "whyUs": [
+  {
+   "title": "Rated 4.5 on Google",
+   "desc": "1,084 happy customers and counting."
+  },
+  {
+   "title": "Locally owned",
+   "desc": "A Rindge favorite, run by people who live here."
+  },
+  {
+   "title": "Made fresh daily",
+   "desc": "Nothing sits around. Everything is prepared in-house."
+  }
+ ],
+ "phone": null,
+ "phoneHref": null,
+ "address": "1421 NH-119, Rindge, NH 03461, USA",
+ "mapsUrl": "https://maps.google.com/?cid=11191206911302096655&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+ "lat": 42.7615736,
+ "lng": -72.0368964,
+ "rating": 4.5,
+ "reviewCount": 1084,
+ "hours": [
+  "Monday: 7:00 AM – 2:00 PM",
+  "Tuesday: Closed",
+  "Wednesday: 7:00 AM – 2:00 PM",
+  "Thursday: 7:00 AM – 2:00 PM",
+  "Friday: 7:00 AM – 3:00 PM",
+  "Saturday: 7:00 AM – 3:00 PM",
+  "Sunday: 7:00 AM – 3:00 PM"
+ ],
+ "openNow": true,
+ "photos": [
+  "/sites/8b166ee322/1.jpg",
+  "/sites/8b166ee322/2.jpg",
+  "/sites/8b166ee322/3.jpg",
+  "/sites/8b166ee322/4.jpg",
+  "/sites/8b166ee322/5.jpg",
+  "/sites/8b166ee322/6.jpg",
+  "/sites/8b166ee322/7.jpg"
+ ],
+ "reviews": [
+  {
+   "author": "Cindy Trainque",
+   "rating": 5,
+   "text": "Two of stopped by for a late lunch..a simple drive by. Bella was our polite and chherful waitress. We both ordered the Brekfast Bowl. Mine was made special as I am allergic to peppers. Food came quickly and portions were large. We didn't finish our meal as we were quite full. We told Bella that we w I all definitely be back!",
+   "when": "5 months ago"
+  },
+  {
+   "author": "Jim Ben",
+   "rating": 5,
+   "text": "07/05/2026 - We stopped for a mid-afternoon lunch.  The food was excellent and the portions were generous but not overwhelming.  There were four servers working and as such, service was very efficient.  The server that took care of us has been employed for over 35 years at this establishment - kudos to her!  The facility interior is of a \"classic\" diner architecture.  We sat at the counter instead of waiting about 20…",
+   "when": "4 months ago"
+  },
+  {
+   "author": "Jerry Albert",
+   "rating": 5,
+   "text": "Authentic 50s era diner. Large food portions and moderately priced. Our server kept the coffee hot and water glasses filled. Seems to be popular with the locals.",
+   "when": "5 months ago"
+  },
+  {
+   "author": "Gaby L",
+   "rating": 5,
+   "text": "It was very busy when we came in and no one acknowledged us as we waited to be seated.\nOrdered the eggs benedict classic, included 2 poached eggs, bacon, avocado, tomato and bacon, grilled english topped with hollandaise sauce and hubby ordered the chicken fried steak and eggs. Also ordered chocolate chip pancakes as well as the banana french toast which was topped off with bananas foster sauce and whipped cream. All…",
+   "when": "a year ago"
+  },
+  {
+   "author": "Olivia Meek",
+   "rating": 5,
+   "text": "The food was absolutely amazing, the service was great and the old time feel of the diner was fabulous. We would definitely eat here again!",
+   "when": "8 months ago"
+  }
+ ],
+ "theme": {
+  "primary": "#9a3412",
+  "accent": "#16a34a",
+  "bg": "#fffaf3",
+  "ink": "#2a1a0f",
+  "soft": "#fde7d3",
+  "onPrimary": "#ffffff"
+ },
+ "builtAt": "2026-11-07T12:39:19.528491+00:00",
+ "builder": {
+  "name": "Prashant Ambaliya",
+  "url": "https://www.prashantambaliya.com/#contact"
+ }
+}

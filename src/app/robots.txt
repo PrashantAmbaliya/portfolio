@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /p/
 
 # Sitemap location
 Sitemap: https://www.prashantambaliya.com/sitemap.xml

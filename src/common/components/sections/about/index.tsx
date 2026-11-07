@@ -76,7 +76,7 @@ export default function About() {
                 <div className="absolute inset-0">
                   <Image
                     src={portfolioImg}
-                    alt="portfolio image"
+                    alt="Prashant Ambaliya, Senior Software Engineer"
                     placeholder="blur"
                     width={470}
                     height={470}
