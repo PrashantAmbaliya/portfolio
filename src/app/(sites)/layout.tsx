@@ -6,6 +6,7 @@ const sans = Plus_Jakarta_Sans({ subsets: ['latin'], variable: '--font-sans', di
 const display = Fraunces({ subsets: ['latin'], variable: '--font-display', display: 'swap', axes: ['opsz'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.prashantambaliya.com'),
   robots: { index: false, follow: false },
 };
 
